@@ -428,3 +428,8 @@ function createEventDescription(eventCard) {
     //attach elements to dom
     $('.event-details').append($eventName,$groupName,$eventDate,$eventAddress, $eventURL,$eventDescription);
 }
+
+$('div.mylabel').click( function() {
+    console.log('Here is the message from clicking on the balloon!')
+});
+

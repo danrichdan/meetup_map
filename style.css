@@ -316,21 +316,28 @@ SCROLL BAR
         width: 100%;
     }
 
-    #map {
+    .map_left {
+        position: static;
+        height: 88vh;
+        z-index: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
         display: none;
     }
 
-    .map-left {
-        position: fixed;
-        height: 88vh;
-        z-index: 2;
-        overflow-y: scroll;
-        overflow-x: hidden;
+    #map {
+        display: block;
+        z-index: 100;
     }
 
     .details-wrapper {
         display: none;
     }
-
+   div.mylabel {
+       /**This is the label text in the map bubbles, clicking on this on smaller view sizes should call the
+       createEventDescription function,
+       the function to create this info bubble is in the index.html file
+       info bubble is an object so, maybe you can add a method to it**/
+   }
 }
 
